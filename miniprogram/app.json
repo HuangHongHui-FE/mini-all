@@ -1,7 +1,13 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/page_container/index"
+    "pages/page_container/index",
+    "pages/animation/index",
+    "pages/wxs/index",
+    "pages/wxs/sidebar/sidebar",
+    "pages/wxs/stick-top/stick-top",
+    "pages/wxs/movable/movable",
+    "pages/wxs/nearby/nearby"
   ],
   
   "window": {

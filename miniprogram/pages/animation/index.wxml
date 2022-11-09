@@ -1,0 +1,33 @@
+<!--pages/animation/index.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+
+      <view class="animation-element-wrapper">
+        <view class="animation-element" animation="{{animation}}"></view>
+      </view>
+      <view class="animation-buttons" scroll-y="true">
+        <view>animation对象动画</view>
+        <button class="animation-button" bindtap="rotate">旋转</button>
+        <button class="animation-button" bindtap="scale">缩放</button>
+        <button class="animation-button" bindtap="translate">移动</button>
+        <button class="animation-button" bindtap="skew">倾斜</button>
+        <button class="animation-button" bindtap="rotateAndScale">旋转并缩放</button>
+        <button class="animation-button" bindtap="rotateThenScale">旋转后缩放</button>
+        <button class="animation-button" bindtap="all">同时展示全部</button>
+        <button class="animation-button" bindtap="allInQueue">顺序展示全部</button>
+        <button class="animation-button animation-button-reset" bindtap="reset">还原</button>
+      </view>
+
+      <view>
+        <view>关键帧动画</view>
+        <view class="animation-element-wrapper">
+          <view class="animation-element-key" id="container"></view>
+        </view>
+        <button class="animation-button" bindtap="keyframesBtn1">关键帧1</button>
+        <button class="animation-button" bindtap="keyframesBtn2">关键帧2</button>
+        <button class="animation-button" bindtap="keyframesBtn3">关键帧3</button>
+      </view>
+    </view>
+  </view>
+</view>

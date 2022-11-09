@@ -27,14 +27,16 @@ Page({
       },
       {
         id: 3,
-        title: '3',
+        title: 'animation',
         idx: 3,
+        path: '../animation/index',
         image_url: '../../images/01.png'
       },
       {
         id: 4,
-        title: '4',
+        title: 'WXS',
         idx: 4,
+        path: '../wxs/index',
         image_url: '../../images/01.png'
       },
       {

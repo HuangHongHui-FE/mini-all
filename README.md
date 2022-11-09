@@ -153,13 +153,31 @@ https://developers.weixin.qq.com/miniprogram/dev/platform-capabilities/extended/
 
 pageContainer页面
 
-##### 组件的使用
+#### 组件的使用
 
 pageContainerCom组件
 
+##### 组件使用的好处：
 
+- 复用
+- 视图样式进行划分，代码更清晰
+- 缩小setData的范围，数据变化，重新渲染的的时候仅限当前组件进行渲染，提高视图渲染的效率。
 
+### 动画
 
+#### 实现
+
+- 使用animation对象实现的css动画
+
+- #### 使用页面或组件对象拥有的animate, 实现的关键帧动画.
+
+  https://developers.weixin.qq.com/miniprogram/dev/framework/view/animation.html
+
+- 以滚动事件驱动的响应式动画
+
+- #### 通过wxs脚本实现的样式动画。
+
+  https://developers.weixin.qq.com/miniprogram/dev/framework/view/interactive-animation.html
 
 
 
@@ -169,5 +187,5 @@ pageContainerCom组件
 
 主包操作2mb不能进行上传了，单页面建议html节点不超过1000个
 
-
+createSelectorQuery.select
 
