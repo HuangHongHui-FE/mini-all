@@ -1,0 +1,9 @@
+<page-container 
+  show="{{show}}"
+  round="false"
+  position="bottom"
+>
+  <view class="detail-page">
+    <button type="primary" bindtap="close">取消</button>
+  </view>
+</page-container>
