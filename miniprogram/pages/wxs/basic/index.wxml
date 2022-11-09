@@ -1,0 +1,3 @@
+<wxs module="test" src="./index.wxs"></wxs>
+<!-- change:prop监听propCValue的改变， 触发propObserver事件 -->
+<view change:prop="{{test.propObserver}}" prop="{{propValue}}" bindtouchmove="{{test.touchmove}}" class="movable" bindtap="changePropValue">点击移动</view>

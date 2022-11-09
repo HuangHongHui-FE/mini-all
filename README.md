@@ -165,6 +165,8 @@ pageContainerCom组件
 
 ### 动画
 
+animation, wxs页面
+
 #### 实现
 
 - 使用animation对象实现的css动画
@@ -179,7 +181,17 @@ pageContainerCom组件
 
   https://developers.weixin.qq.com/miniprogram/dev/framework/view/interactive-animation.html
 
+  一次 touchmove 的响应需要经过 2 次的逻辑层和渲染层的通信以及一次渲染，通信的耗时比较大。此外 setData 渲染也会阻塞其它脚本执行，导致了整个用户交互的动画过程会有延迟。
 
+  本方案基本的思路是减少通信的次数，让事件在视图层（Webview）响应。小程序的框架分为视图层（Webview）和逻辑层（App Service），这样分层的目的是管控，开发者的代码只能运行在逻辑层（App Service），而这个思路就必须要让开发者的代码运行在视图层（Webview）
+
+### 重渲染与自定义组件的优化
+
+- 将界面功能组件化
+
+- 去掉不必要的数据设置，减少每次setData设置的数据量
+
+- 通过wxs脚本改写组件，让他可以在视图层完成代码逻辑。
 
 
 
