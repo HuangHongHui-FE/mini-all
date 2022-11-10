@@ -1,0 +1,5 @@
+{
+  "usingComponents": {},
+  "lazyCodeLoading": "requiredComponents",
+  "initialRenderingCache": "dynamic"
+}

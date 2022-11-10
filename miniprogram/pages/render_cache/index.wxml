@@ -1,0 +1,10 @@
+<!--pages/render_cache/index.wxml-->
+<text>按需注入</text>
+<view>"lazyCodeLoading": "requiredComponents",</view>
+
+<view>静态初始渲染缓存: </view>
+<view>"initialRenderingCache": "static"</view>
+<view>动态初始渲染缓存: </view>
+<view>"initialRenderingCache": "dynamic"</view>
+
+<view>注意js动态注入的数据</view>

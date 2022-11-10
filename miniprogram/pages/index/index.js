@@ -41,8 +41,9 @@ Page({
       },
       {
         id: 5,
-        title: '5',
+        title: 'renderCache',
         idx: 5,
+        path: '../render_cache/index',
         image_url: '../../images/01.png'
       },
       {

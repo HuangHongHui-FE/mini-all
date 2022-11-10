@@ -8,9 +8,12 @@
     "pages/wxs/stick-top/stick-top",
     "pages/wxs/movable/movable",
     "pages/wxs/nearby/nearby",
-    "pages/wxs/basic/index"
+    "pages/wxs/basic/index",
+    "pages/render_cache/index"
   ],
-  
+
+  "lazyCodeLoading": "requiredComponents",
+  "initialRenderingCache": "static",
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
