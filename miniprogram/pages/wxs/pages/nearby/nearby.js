@@ -2,10 +2,10 @@ const windowWidth = wx.getSystemInfoSync().windowWidth
 Page({
   data: {
     imgUrls: [
-      '/images/1.jpeg',
-      '/images/2.jpg',
-      '/images/3.jpg',
-      '/images/4.jpg'
+      '../../../../images/1.jpeg',
+      '../../../../images/2.jpg',
+      '../../../../images/3.jpg',
+      '../../../../images/4.jpg'
     ],
     imgSize: [{
       height: 150

@@ -6,6 +6,8 @@ https://developers.weixin.qq.com/miniprogram/dev/framework/sitemap.html
 
 ## 性能优化
 
+其他相关优化文档：https://juejin.cn/post/7073792527093989407
+
 ##### APP生命周期
 
 ```
@@ -207,7 +209,7 @@ animation, wxs页面
 
 
 
-### 按需注入
+### 按需注入（懒加载）
 
 只会注入当前页面会用到的代码
 
@@ -235,9 +237,30 @@ render_cache页面。
 
 ##### 动态
 
+
+
+
+
+### 独立分包
+
+例如主页，tabbar按官方提供的方式配置，tabbar页面也会算进主包大小里。分包的话就自定义tabbar组件
+
+##### 优点
+
+- 减少主包的大小，优化渲染速度，同时避免因包太大而不能上传审核。
+- tabbar图标不在仅限于只能使用本地图片。
+- 代码中tabbar页面的跳转不用再单独使用wx.switchTab
+- tabbar组件本省也可以不放在主包里
+
+注意修改app.json的page配置，跳转注意路径等。
+
+
+
 ### 注意
 
-主包操作2mb不能进行上传了，单页面建议html节点不超过1000个
+单个代码包不超过2MB,总包大小不超过20MB即可。
 
-createSelectorQuery.select
+主包操作2mb不能进行上传了，单页面建议html节点不超过1000个。
+
+createSelectorQuery.select。
 

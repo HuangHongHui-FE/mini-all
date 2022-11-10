@@ -3,13 +3,50 @@
     "pages/index/index",
     "pages/page_container/index",
     "pages/animation/index",
-    "pages/wxs/index",
-    "pages/wxs/sidebar/sidebar",
-    "pages/wxs/stick-top/stick-top",
-    "pages/wxs/movable/movable",
-    "pages/wxs/nearby/nearby",
-    "pages/wxs/basic/index",
     "pages/render_cache/index"
+  ],
+
+  "tabBar": {
+    "selectedColor": "#FF0000",
+    "position": "bottom",
+    "borderStyle": "black",
+    "backgroundColor": "#F0F8FF",
+    "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/2.jpg",
+      "selectedIconPath": "images/3.jpg"
+    },
+    {
+      "pagePath": "pages/page_container/index",
+      "text": "页面容器",
+      "iconPath": "images/3.jpg",
+      "selectedIconPath": "images/4.jpg"
+    },
+    {
+      "pagePath": "pages/animation/index",
+      "text": "动画",
+      "iconPath": "images/3.jpg",
+      "selectedIconPath": "images/4.jpg"
+    }
+    ]  
+  },
+
+
+
+  "subPackages": [
+    {
+      "root": "pages/wxs",
+      "pages": [
+        "pages/index/index",
+        "pages/sidebar/sidebar",
+        "pages/stick-top/stick-top",
+        "pages/movable/movable",
+        "pages/nearby/nearby",
+        "pages/basic/index"
+      ]
+    }
   ],
 
   "lazyCodeLoading": "requiredComponents",

@@ -36,7 +36,7 @@ Page({
         id: 4,
         title: 'WXS',
         idx: 4,
-        path: '../wxs/index',
+        path: '../wxs/pages/index/index',
         image_url: '../../images/01.png'
       },
       {

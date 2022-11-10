@@ -18,7 +18,7 @@
     </view>
   </view>
   <view data-width="{{windowWidth}}" bindtouchmove="{{test.touchmove}}" bindtouchend="{{test.touchend}}" bindtouchstart="{{test.touchstart}}" class="page-top" style="color:white;">
-    <image bindtap="tap_ch" src="../../../images/btn.png"></image>
+    <image bindtap="tap_ch" src="../../../../images/btn.png"></image>
     右滑出现侧边菜单
   </view>
 </view>
