@@ -43,3 +43,6 @@
     <button type="primary" bindtap="exit">推出</button>
   </view>
 </page-container>
+
+
+<Tabbar id="tabBar"></Tabbar>

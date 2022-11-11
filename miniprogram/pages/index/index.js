@@ -103,6 +103,10 @@ Page({
     // ctx.append()
     // ctx.update(beginIndex, list)
     // ctx.destroy()
+
+
+    // tabbar的分包
+    this.selectComponent("#tabBar")?.select(0);
   },
   itemSizeFunc: function (item, idx) {
     return {

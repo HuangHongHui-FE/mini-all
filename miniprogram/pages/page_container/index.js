@@ -16,8 +16,8 @@ Page({
 
     
   },
-  onShow() {
-   
+  onReady() {
+    this.selectComponent("#tabBar")?.select(1);
   },
 
   popup(e) {

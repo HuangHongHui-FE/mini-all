@@ -1,0 +1,39 @@
+.bar {
+  position: sticky;
+  bottom: 1 !important;
+  width: 100%;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  justify-content: space-around;
+  background-color: #fff;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+
+.bar .bar_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bar .bar_img{
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+}
+
+
+.bar .bar_text{
+  font-size: 10px;
+  color: #515151;
+}
+
+
+.bar .bar_active .bar_text{
+  color: #d81e06;
+}
+

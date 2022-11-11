@@ -36,3 +36,6 @@
 
   <pageContainerCom id="pageContainerComId" showPro="{{showPage}}"></pageContainerCom>
 </view>
+
+
+<Tabbar id="tabBar"></Tabbar>

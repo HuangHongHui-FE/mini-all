@@ -11,6 +11,9 @@ Page({
   onReady: function () {
     // 1. 使用animation对象实现的css动画
     this.animation = wx.createAnimation();
+
+    // tabbar的分包
+    this.selectComponent("#tabBar")?.select(2);
   },
   rotate: function () {
     // step() 表示一组动画的完成，可以在一组动画中调用任意多个动画方法

@@ -254,6 +254,39 @@ render_cache页面。
 
 注意修改app.json的page配置，跳转注意路径等。
 
+#### tabbar分包
+
+```
+"tabBar": {
+    "selectedColor": "#FF0000",
+    "position": "bottom",
+    "borderStyle": "black",
+    "backgroundColor": "#F0F8FF",
+    "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/2.jpg",
+      "selectedIconPath": "images/3.jpg"
+    },
+    {
+      "pagePath": "pages/page_container/index",
+      "text": "页面容器",
+      "iconPath": "images/3.jpg",
+      "selectedIconPath": "images/4.jpg"
+    },
+    {
+      "pagePath": "pages/animation/index",
+      "text": "动画",
+      "iconPath": "images/3.jpg",
+      "selectedIconPath": "images/4.jpg"
+    }
+    ]  
+  },
+```
+
+配置分包，写tabbar组件，定义好list路径
+
 
 
 ### 注意
