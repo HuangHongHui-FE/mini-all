@@ -285,7 +285,7 @@ render_cache页面。
   },
 ```
 
-配置分包，写tabbar组件，定义好list路径
+配置分包，写tabbar组件，定义好list路径，涉及到的页面引入tabbar, js的onready里引入调用·select方法
 
 
 
