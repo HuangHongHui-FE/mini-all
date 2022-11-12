@@ -241,7 +241,9 @@ render_cache页面。
 
 
 
-### 独立分包
+### 分包
+
+https://developers.weixin.qq.com/miniprogram/dev/framework/subpackages.html
 
 例如主页，tabbar按官方提供的方式配置，tabbar页面也会算进主包大小里。分包的话就自定义tabbar组件
 
@@ -254,7 +256,7 @@ render_cache页面。
 
 注意修改app.json的page配置，跳转注意路径等。
 
-#### tabbar分包
+##### tabbar分包
 
 ```
 "tabBar": {
@@ -287,6 +289,38 @@ render_cache页面。
 
 配置分包，写tabbar组件，定义好list路径，涉及到的页面引入tabbar, js的onready里引入调用·select方法
 
+##### 独立分包
+
+准备在微信群分享传播的页面，适合， 有返回主页的按钮
+
+注意app.wxss样式以及getApp方法
+
+##### 分包预加载
+
+
+
+
+
+### 占位组件
+
+https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/placeholder.html
+
+### 分包异步化
+
+https://developers.weixin.qq.com/miniprogram/dev/framework/subpackages/async.html
+
+获取其他未加载的分包里面的代码
+
+### 项目插件化
+
+### WebAssembly
+
+js里插入其他语言来，优化计算性能，适合做大块的数据运算，不适合高频的运算（毕竟js链接go也需要时间）
+
+### 异步转同步的编程范式
+
+
+
 
 
 ### 注意
@@ -297,3 +331,12 @@ render_cache页面。
 
 createSelectorQuery.select。
 
+
+
+
+
+主页都应被尽快看到，可以把其他页面都设置分包，主页里面的组件也可以设置分包，然后进行分包异步化
+
+- app.json: 项目运行配置文件
+- project.config.json: 项目开发配置文件
+- project.private.config.json: 项目私有开发配置文件
