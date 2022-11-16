@@ -1,0 +1,2 @@
+<!--pages/switch_btn/index.wxml-->
+<button type="primary" class="switch-btn" hover-class="switch-btn_hover" size="mini">按钮</button>
