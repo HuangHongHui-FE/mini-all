@@ -64,7 +64,7 @@ Page({
         id: 8,
         title: 'clearTimer',
         idx: 8,
-        path: '../clear_timer',
+        path: '../clear_timer/index',
         image_url: '../../images/01.png'
       },
       {
