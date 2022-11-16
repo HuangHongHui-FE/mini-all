@@ -1,0 +1,11 @@
+
+<view>
+  - 组件定时器及时清除，onhide也及时清除
+</view>
+<view>
+  - wx.onXXX全局监听的，进行反监听-主题demo
+</view>
+<view>
+  - 全局appjs定义的数据，及时清除
+</view>
+<ClearTimer></ClearTimer>

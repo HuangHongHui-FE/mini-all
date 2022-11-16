@@ -1,0 +1,3 @@
+<!--components/ClearTimer/index.wxml-->
+<text>在页面里onhide清除定时器</text>
+<button catchtap="start" type="primary">开启</button>

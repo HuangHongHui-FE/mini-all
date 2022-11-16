@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "ClearTimer": "/components/ClearTimer/index"
+  }
+}
