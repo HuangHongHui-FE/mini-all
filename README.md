@@ -319,9 +319,69 @@ js里插入其他语言来，优化计算性能，适合做大块的数据运算
 
 ### 异步转同步的编程范式
 
+### 延迟同步请求
 
 
 
+首次只加载一页的数据，等到scroll的时候到底部的时候，触发事件加载新的数据
+
+### 数据预拉取
+
+小程序启动时，微信异步调用开发者设置的云函数或数据接口，拿到数据后，在发给小程序
+
+https://developers.weixin.qq.com/miniprogram/dev/framework/ability/pre-fetch.html
+
+### 周期性更新
+
+https://developers.weixin.qq.com/miniprogram/dev/framework/ability/background-fetch.html
+
+用户未打开小程序的情况下，也能从服务器提前拉取数据，当用户打开小程序时可以更快地渲染页面，减少用户等待时间，增强在弱网条件下的可用性。
+
+### 数据请求的优化
+
+we.request:
+
+- enableCache, 开启缓存内容，想同的请求优先读取本地的内容
+- enableHttp2, 开启http2。
+- enableQuic，开启quic第三代协议
+- enableHttpDNS,是否开启HttpDNS服务， 与httpDNS服务商的ServiceId参数一起使用，防止DNS劫持 
+
+### 代码依赖分析
+
+无依赖文件一般可以删除了
+
+使用packOptions.ignore选项忽略或添加目录
+
+### wxss优化
+
+自定义的单击态按钮
+
+### gulp删除无用的代码样式
+
+```
+npm install gulp -g
+npm install --save-dev gulp gulp-cleanwxss
+```
+
+tool文件夹下编写tools配置
+
+### 脚本优化技巧
+
+clear_timer
+
+- 组件定时器及时清除，onhide也及时清除
+- wx.onXXX全局监听的事件，也要进行反监听
+- 全局appjs定义的数据，及时清除
+- 不准备渲染的数据不放在data里，
+- 强制更新：虚拟列表
+  - this.ctx.forceUpdate  // 强制重新渲染
+  - this.ctx.update(index, [item])  // 下标与更新后的数据， ctx
+
+
+
+### 细节
+
+事件绑定使用catchtap自动忽略冒泡，避免不必要的事件触发
 
 ### 注意
 

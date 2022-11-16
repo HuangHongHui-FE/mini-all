@@ -48,20 +48,23 @@ Page({
       },
       {
         id: 6,
-        title: '6',
+        title: 'setData',
         idx: 6,
+        path:'../set_data/index',
         image_url: '../../images/01.png'
       },
       {
         id: 7,
-        title: '7',
+        title: 'switch_btn',
         idx: 7,
+        path: '../switch_btn/index',
         image_url: '../../images/01.png'
       },
       {
         id: 8,
-        title: '8',
+        title: 'clearTimer',
         idx: 8,
+        path: '../clear_timer',
         image_url: '../../images/01.png'
       },
       {

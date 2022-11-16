@@ -3,7 +3,10 @@
     "pages/index/index",
     "pages/page_container/index",
     "pages/animation/index",
-    "pages/render_cache/index"
+    "pages/render_cache/index",
+    "pages/set_data/index",
+    "pages/switch_btn/index",
+    "pages/clear_timer/index"
   ],
 
   "subPackages": [
@@ -32,6 +35,8 @@
   "usingComponents": {
     "Tabbar": "/components/Tabbar/index"
   },
+
+  "darkmode": true,
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
