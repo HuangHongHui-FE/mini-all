@@ -377,6 +377,38 @@ clear_timer
   - this.ctx.forceUpdate  // 强制重新渲染
   - this.ctx.update(index, [item])  // 下标与更新后的数据， ctx
 
+### 使用本地缓存
+
+我们屏幕上看到的截图，首先从本地缓存中尝试取出缓存数据，如果取到了就先用上，然后向后端发起网络请求，拿到最新的导航数据以后再调用setData重新设置一下数据，并把本地数据也刷新一遍，避免本地缓存过时。注意这些同步的api都尽量在onReady里调用。
+
+##### 打破网络请求的10个并发限制，按优先级排序
+
+```
+yarn add priority-saync-queue
+```
+
+自带优先级的异步队列
+
+request.js
+
+注意： 调用的时候：
+
+```
+const res = await request({
+	url: 'xxx',
+	priority: "urgent"  // 加这个
+})
+```
+
+### 图片优化
+
+- 减少请求次数
+- 使用压缩图片大小
+- 图片的CDN加速
+- 尽量使用高压缩比图片，webp
+
+
+
 
 
 ### 细节
